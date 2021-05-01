@@ -37,8 +37,10 @@ function calcular() {
 function adicionar() {
     let adicionar = `
     <div class="campo_nota" id = "${document.quantidade}_div">
-            <input class="campo_nota" type="number" value="" onChange="onChange('${document.quantidade}_CH')" id="${document.quantidade}_CH" placeholder="Carga horária em horas">
-            <input class="campo_nota" type="number" value="" onChange="onChange('${document.quantidade}_NOTA')" id="${document.quantidade}_NOTA" placeholder="Nota">
+            <p>Carga horária em aulas: </p>
+            <input class="campo_nota" type="number" value="" onChange="onChange('${document.quantidade}_CH')" id="${document.quantidade}_CH" placeholder="Somente números">
+            <p>Nota: </p>
+            <input class="campo_nota" type="number" value="" onChange="onChange('${document.quantidade}_NOTA')" id="${document.quantidade}_NOTA" placeholder="Somente números">
             <button class="botao_apagar" id="${document.quantidade}_x" onclick="apagar(${document.quantidade})">X</button>
         </div>
     `;
